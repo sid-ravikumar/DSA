@@ -21,6 +21,8 @@ def twoNumberSum(array, targetSum):
             remainders[num] = remainder
     return []
 
+# Sample Input:
 array = [3, 5, -4, 8, 11, 1, -1, 6]
 targetSum = 10
+# Expected Output: [-1, 11]
 print(twoNumberSum(array, targetSum))
