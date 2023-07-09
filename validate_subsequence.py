@@ -7,15 +7,17 @@
 # and so do the numbers [2, 4]. Note that a single number in an array and the
 # array itself are both valid subsequences of the array.
 
-def isValidSubsequence(array, sequence):
-   sequence_index = 0
-   for num in array:
-      if num == sequence[sequence_index]:
-         sequence_index += 1 
-         if sequence_index == len(sequence):
-            return True
-   return False
 
+def isValidSubsequence(array, sequence):
+    if not sequence:
+        return True
+    sequence_index = 0
+    for num in array:
+        if num == sequence[sequence_index]:
+            sequence_index += 1
+            if sequence_index == len(sequence):
+                return True
+    return False
 
 
 # Sample Input:
